@@ -17,7 +17,7 @@ public class Camerashakeatall : MonoBehaviour
         
     }
 
-    void InititateShake()
+    public void InititateShake()
     {
         StartCoroutine(cameraShake.Shake(1f, .03f));
     }
