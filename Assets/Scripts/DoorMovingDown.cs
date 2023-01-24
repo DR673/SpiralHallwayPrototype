@@ -6,7 +6,7 @@ public class DoorMovingDown : MonoBehaviour
 {
     public float speed = 1f;
     public float distanceMoved = 0;
-    public float distanceToMove = 2.5f;
+    public float distanceToMove = 5f;
     private bool moveComplete = false;
     public bool canMove = false;
 

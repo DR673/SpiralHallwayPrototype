@@ -21,6 +21,7 @@ public class DoorOpening : MonoBehaviour
     public bool WithinRange4 = false;
     public bool WithinRange5 = false;
     public bool WithinRange6 = false;
+    public bool WithinRange7 = false;
 
     // Start is called before the first frame update
     void Start()

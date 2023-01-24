@@ -8,7 +8,7 @@ public class TeleportOnE : MonoBehaviour
     public GameObject PlayerCharacter;
     public GameObject Door;
     public Transform StartPosition;
-    public float range = 1.5f;
+    public float range = 2f;
     public Vector3 teleportLocation = new Vector3(13.5f, -0.8f, -17.6f);
     public float fadeSpeed = 0.5f;
 
