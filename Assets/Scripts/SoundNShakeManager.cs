@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class SoundNShakeManager : MonoBehaviour
 {
-    public float TimeRemaining = 1f;
+    public float TimeRemaining = 2f;
 
-    public GameObject audiosource;
+   // public GameObject audiosource, audiosource2, audiosource3, particleobject;
+    public GameObject audiosource, audiosource2, audiosource3, particleobject;
+
 
     public bool Done;
     public bool Active;
@@ -25,14 +27,40 @@ public class SoundNShakeManager : MonoBehaviour
         {
             TimeRemaining -= Time.deltaTime;
 
-            if (Done && TimeRemaining <= 0)
+            if (Done && TimeRemaining <= 1.4f)
             {
-                //audiosource.SetActive(true);
+                audiosource2.SetActive(true);
+            }
+
+            if (Done && TimeRemaining <= 1.36f)
+            {
+                audiosource3.SetActive(true);
+            }
+
+
+            if (Done && TimeRemaining <= 1.32f)
+            {
+                audiosource.SetActive(true);
+                
+            }
+
+            if (Done && TimeRemaining <= 1.2f)
+            {
+                
+                particleobject.SetActive(true);
+            }
+
+
+            if (Done && TimeRemaining <= 1)
+            {
+                
                 gameObject.GetComponent<Camerashakeatall>().InititateShake();
+                
 
                 Done = false;
 
             }
+
         }
     }
 }
